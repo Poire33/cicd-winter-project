@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class station {
+    @NotBlank
     private String stationCode;
 
     @NotBlank
