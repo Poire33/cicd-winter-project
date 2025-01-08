@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
+@RequestMapping("/stations")
 public class stationController {
     private stationServices myService;
 
@@ -18,6 +19,11 @@ public class stationController {
 
     @PostMapping("/stations")
     public List<station> addStation(@Valid @RequestBody station stationRequest) {
+        return list;
+    }
+
+    @GetMapping
+    public List<station> listStation(station station) {
         return list;
     }
 }
