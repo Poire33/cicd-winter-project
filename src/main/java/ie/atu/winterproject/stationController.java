@@ -17,7 +17,7 @@ public class stationController {
 
     private List<station> list = new ArrayList<>();
 
-    @PostMapping("/stations")
+    @PostMapping
     public List<station> addStation(@Valid @RequestBody station stationRequest) {
         return list;
     }
